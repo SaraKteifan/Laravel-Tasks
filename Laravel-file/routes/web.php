@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller1;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,19 @@ Route::get('/contactUs', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/signUp', function () {
+    return view('signUp');
+});
+
+Route::get('/navbar', function () {
+    return view('navbar');
+});
+
+Route::get('/task2/id/{id}', [Controller1::class, 'onlyNum'])->where('id', '[0-9]+');
+
+Route::get('/task3/name/{name}', [Controller1::class, 'onlyString'])->where('name', '[A-Za-z]+');
