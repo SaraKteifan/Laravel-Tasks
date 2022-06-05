@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -143,7 +142,6 @@ p {
     </style>
 </head>
 <body>
-
 <h1  style="margin-top:200px;">
 ABOUT US
 <br>

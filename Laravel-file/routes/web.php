@@ -42,10 +42,29 @@ Route::get('/signUp', function () {
     return view('signUp');
 });
 
-Route::get('/navbar', function () {
-    return view('navbar');
-});
+Route::get('/navbar', [Controller1::class, 'navbar']);
+
+Route::get('/footer', [Controller1::class, 'footer']);
+
+Route::get('/master', [Controller1::class, 'master']);
+
+Route::get('/home', [Controller1::class, 'candy']);
+
+Route::get('/about', [Controller1::class, 'about']);
+
+Route::get('/contact', [Controller1::class, 'contact']);
+
+Route::get('/log', [Controller1::class, 'log']);
+
+Route::get('/sign', [Controller1::class, 'sign']);
 
 Route::get('/task2/id/{id}', [Controller1::class, 'onlyNum'])->where('id', '[0-9]+');
 
 Route::get('/task3/name/{name}', [Controller1::class, 'onlyString'])->where('name', '[A-Za-z]+');
+
+// Route::get('/list', [Controller1::class, 'list']);
+
+// Route::get('/addItem', [Controller1::class, 'add']);
+
+Route::get('/candy',  [Controller1::class, 'homePage']);
+    

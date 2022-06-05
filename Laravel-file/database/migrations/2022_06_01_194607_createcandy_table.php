@@ -18,6 +18,7 @@ class CreatecandyTable extends Migration
             $table->string('candy_name');
             $table->double('candy_price');
             $table->integer('candy_quantity');
+            $table->string('candy_img');
             $table->timestamps();
         });
     }
