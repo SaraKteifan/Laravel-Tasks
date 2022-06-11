@@ -303,8 +303,10 @@ img{
   <div class="container">
   <div class="row">
     @foreach($data as $value)
-    <div class="col-sm">
+    <div class="col-4" style="margin-bottom:30px;">
       <img class="barimg" src="{{ asset('Images/'.$value->candy_img) }}" alt="candybar">
+      <span style="margin-right:100px; font-size:small"><a href="/delete/{{$value->item_id}}">Delete</a></span>
+      <span style="margin-left:100px; font-size:small"><a href="/edit/{{$value->item_id}}">Update</a></span>
       <p style="margin:10px 0;"> {{$value->candy_name}} </p>
       <p style="margin:10px 0;"> {{$value->candy_price}} JOD </p>
       <button type="button" class="btn btn-dark">Buy Now</button>

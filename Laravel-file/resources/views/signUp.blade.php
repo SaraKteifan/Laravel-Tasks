@@ -235,12 +235,12 @@ button:focus {
       <div class='welcome'>Sign Up</div>
       <!-- <div class='subtitle'>We're almost done. Before using our services you need to create an account.</div> -->
       <div class='input-fields'>
-        <input type='text' placeholder='First Name' class='input-line full-width'></input>
-      <input type='text' placeholder='Second Name' class='input-line full-width'></input>
-        <input type='email' placeholder='Email' class='input-line full-width'></input>
-        <input type='password' placeholder='Password' class='input-line full-width'></input>
-<input type='text' placeholder='City Name' class='input-line full-width'></input>
-<input type='tel' placeholder='Mobile Number' class='input-line full-width'></input>
+        <input type='text' placeholder='First Name' class='input-line full-width' name='user_fname'>
+      <input type='text' placeholder='Second Name' class='input-line full-width' name='user_sname'>
+        <input type='email' placeholder='Email' class='input-line full-width' name='user_email'>
+        <input type='password' placeholder='Password' class='input-line full-width' name='user_password'>
+<input type='text' placeholder='City Name' class='input-line full-width' name='user_city'>
+<input type='tel' placeholder='Mobile Number' class='input-line full-width' name='user_mobile'>
       </div>
       <!-- <div class='spacing'>or continue with <span class='highlight'>Facebook</span></div> -->
       <div><button class='ghost-round full-width'>Create Account</button></div>

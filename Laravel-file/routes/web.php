@@ -67,4 +67,13 @@ Route::get('/task3/name/{name}', [Controller1::class, 'onlyString'])->where('nam
 // Route::get('/addItem', [Controller1::class, 'add']);
 
 Route::get('/candy',  [Controller1::class, 'homePage']);
-    
+
+Route::get('/addItem',  [Controller1::class, 'add']);
+
+Route::post('/added',  [Controller1::class, 'insert']);
+
+Route::get('/delete/{id}',  [Controller1::class, 'delete']);
+
+Route::get('/edit/{id}',  [Controller1::class, 'show']);
+
+Route::post('/update/{id}',  [Controller1::class, 'edit']);
